@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="tests.GoogleTests" skipped="0" tests="1" time="32.79" timestamp="2020-04-16 11:48:07"><testcase classname="tests.GoogleTests" name="Search for something"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="tests.GoogleTests" skipped="0" tests="2" time="191.88" timestamp="2020-04-16 07:53:50"><testcase classname="tests.GoogleTests" name="Search for something"/><testcase classname="tests.GoogleTests" name="Navigate on selenium easy"/></testsuite>
