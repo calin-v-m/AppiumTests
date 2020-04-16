@@ -18,11 +18,13 @@ public class GoogleSteps extends ScenarioSteps {
         googlePage.fillField(parameter);
         googlePage.clickSearch();
         googlePage.clickSamsungCheckBox();
-       // googlePage.clickOnNewCondition();
-        googlePage.clickOnUnlockedPhones();
-        googlePage.clickOnPriceSelectorTabLowerVal();
-        googlePage.clickOnPriceSelectorTabUpperVal();
-        googlePage.clickOn256GbMemoryBox();
+        googlePage.clickOnUnlockedPhones();     
+        googlePage.clickInScreenSize();  
+        
+        googlePage.clickOnPriceSelectorTabLowerVal(); 
+        googlePage.clickOnPriceSelectorTabUpperVal();  
+        googlePage.clickOnNewCondition();
+        googlePage.clickOn128GbMemoryBox();
         googlePage.clickOnDropDown();
         googlePage.loopThroughTheList();
         waitABit(5000);	// to see what happens after the test stops

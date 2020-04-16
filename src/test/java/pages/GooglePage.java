@@ -22,8 +22,8 @@ public class GooglePage extends PageObject {
     @FindBy(css = "#a-page [id='p_89/Samsung'] [type='checkbox']")
     WebElementFacade samsungCheckBox;
     
-    @FindBy(css = "#p_n_condition-type\\/6461716011")
-    WebElementFacade newCondition;
+    @FindBy(css = "a span[class=\"a-size-base a-color-base\"]")
+    List<WebElementFacade> myListThatIncludesNew = new ArrayList();;
      
     @FindBy(css = "#n\\/2407749011")
     WebElementFacade unockedPhonesTab;
@@ -37,7 +37,7 @@ public class GooglePage extends PageObject {
     @FindBy(css = "#a-autoid-1")
     WebElementFacade goButton;
     
-    @FindBy(css = "#filters [aria-label=\"256 GB & above\"] [class=\"a-icon a-icon-checkbox\"]")
+    @FindBy(css = "li[aria-label=\"128 GB\"] i[class=\"a-icon a-icon-checkbox\"]")
     WebElementFacade gbMemoryThickBox;
     
     @FindBy(css = ".a-dropdown-container")
@@ -48,6 +48,9 @@ public class GooglePage extends PageObject {
     
     @FindBy(css = ".sg-col-inner [class='a-section a-spacing-small a-spacing-top-small'] span[dir='auto']")
     List<WebElementFacade> listWithResults = new ArrayList();
+    
+    @FindBy(css ="li[aria-label='5.5 in & above'] i[class='a-icon a-icon-checkbox']")
+    WebElementFacade screenSizeCheckBox;
     
     public void fillField(String parameter){
         searchField.click();
@@ -69,7 +72,11 @@ public class GooglePage extends PageObject {
     }
     
     public void clickOnNewCondition(){
-    	doClickForced(newCondition);
+    	for (WebElementFacade element : myListThatIncludesNew) {
+    		if (element.getText().equals("New"))
+    				element.click();
+    		break;
+    	}
     }
       
     public void clickOnUnlockedPhones(){
@@ -77,7 +84,7 @@ public class GooglePage extends PageObject {
     }
     
     public void clickOnPriceSelectorTabLowerVal(){
-    	fillField("800" ,priceSelectorTabLowerValueTextField);	
+    	fillField("300" ,priceSelectorTabLowerValueTextField);	
     }
     
     public void clickOnPriceSelectorTabUpperVal(){
@@ -85,8 +92,12 @@ public class GooglePage extends PageObject {
     	goButton.click();    	
     }
     
-    public void clickOn256GbMemoryBox(){
+    public void clickOn128GbMemoryBox(){
     	gbMemoryThickBox.click();	
+    }
+    
+    public void clickInScreenSize(){
+    	screenSizeCheckBox.click();	
     }
     
     public void clickOnDropDown(){
@@ -112,5 +123,6 @@ public class GooglePage extends PageObject {
    	 actions.click();
    	 actions.build().perform();
     }
+
     
 }
