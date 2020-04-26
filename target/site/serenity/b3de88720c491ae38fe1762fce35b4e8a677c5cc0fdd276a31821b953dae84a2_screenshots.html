@@ -151,7 +151,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-04-2020 19:53</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-04-2020 18:11</span>
     <br style="clear:left"/>
 </div>
 
@@ -186,9 +186,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Search for something
+                                <span class="failing-color">Search for something
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -205,11 +205,57 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>pages.GooglePage.clickOn128GbMemoryBox(GooglePage.java:96)<br />steps.GoogleSteps.searchOnAmazon(GoogleSteps.java:27)<br />tests.GoogleTests.searchForSomething(GoogleTests.java:38)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for GooglePage.gbMemoryThickBox to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>pages.GooglePage.clickOn128GbMemoryBox(GooglePage.java :96)<br />steps.GoogleSteps.searchOnAmazon(GoogleSteps.java :27)<br />tests.GoogleTests.searchForSomething(GoogleTests.java :38)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java :89)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java :41)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :542)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :770)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java :464)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java :210)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource9600146299053925246.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="9a56fb409f54e6c49157fbe36d6438958f6babf071188a9e071db9cd062ef456.png" title=" Navigate to page" width="1366"/>
-                <img src="ec719e587de80f494be20e11b45d7425ed200a14d8b335b839b0cab89d8047a3.png" title=" Navigate to page (completed)" width="1366"/>
-                <img src="534283b3384008bf8df30930f64a6d49d2f4ad494752e0c75943742daf8c7838.png" title=" Search on amazon: Samsung Note 10+: <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="380d07c8d0eeaff21e8beaa99121afaefb1f925ef795040cfc055ef3858bf0a8.png" title=" Navigate to page (completed)" width="1366"/>
+                <img src="9b4dcd02636bf000b0552667e26be9be03b7c8eda3b535df14657abd215b0257.png" title=" Search on amazon: Samsung Note 10+: <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 
