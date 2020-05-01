@@ -58,8 +58,6 @@ public class SeleniumEasyPage extends PageObject {
     
     @FindBy(css ="li[class='last expanded active-trail active dropdown']")
     WebElementFacade moreDropdown2; 
-   
-
     
     @FindBy(css ="li[class='last expanded dropdown open'] a[href='/jxl-tutorials']")
     WebElementFacade jxlTab;

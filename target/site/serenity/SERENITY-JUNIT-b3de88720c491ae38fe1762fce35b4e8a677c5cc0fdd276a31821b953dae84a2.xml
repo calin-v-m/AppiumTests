@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="tests.GoogleTests" skipped="0" tests="2" time="160.05" timestamp="2020-04-23 06:11:45"><testcase classname="tests.GoogleTests" name="Search for something"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled
-pages.GooglePage.clickOn128GbMemoryBox(GooglePage.java:96)
-steps.GoogleSteps.searchOnAmazon(GoogleSteps.java:27)
-tests.GoogleTests.searchForSomething(GoogleTests.java:38)
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="tests.GoogleTests" skipped="0" tests="2" time="165.77" timestamp="2020-05-01 07:34:36"><testcase classname="tests.GoogleTests" name="Search for something"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled
+pages.GooglePage.clickInScreenSize(GooglePage.java:100)
+steps.GoogleSteps.searchOnAmazon(GoogleSteps.java:22)
+tests.GoogleTests.searchForSomething(GoogleTests.java:36)
 org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
 org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
 org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)

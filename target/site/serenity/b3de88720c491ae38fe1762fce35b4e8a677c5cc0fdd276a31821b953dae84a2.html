@@ -38,34 +38,12 @@
 <script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
 <link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
 <script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
-<script type="text/javascript" src="datatables/1.10.19/time-elapsed-dhms.js"></script>
 
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="bootstrap/js/bootstrap.min.js"></script>
 
 <script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
 <link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
-
-<script>
-    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
-
-        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
-        var multipliers = {
-            ms: 1,
-            s: 1000,
-            m: 60000,
-            h: 3600000,
-            d: 86400000
-        };
-
-        if (matches) {
-            var multiplier = multipliers[matches[2].toLowerCase()];
-            return parseFloat(matches[1]) * multiplier;
-        } else {
-            return -1;
-        };
-    };
-</script>
 <link rel="stylesheet" href="css/core.css"/>
 <link rel="stylesheet" href="css/link.css"/>
 <link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- JQuery-UI -->
@@ -73,39 +51,15 @@
 <script type="text/javascript" src="jqueryui/1.11.2-start/jquery-ui.min.js"></script><!-- DataTables -->
 <link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
 <script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
-<script type="text/javascript" src="datatables/1.10.19/time-elapsed-dhms.js"></script>
 
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="bootstrap/js/bootstrap.min.js"></script>
 
 <script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
 <link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
-
-<script>
-    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
-
-        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
-        var multipliers = {
-            ms: 1,
-            s: 1000,
-            m: 60000,
-            h: 3600000,
-            d: 86400000
-        };
-
-        if (matches) {
-            var multiplier = multipliers[matches[2].toLowerCase()];
-            return parseFloat(matches[1]) * multiplier;
-        } else {
-            return -1;
-        };
-    };
-</script>
 <!-- ImgPreview -->
 <script src="scripts/imgpreview.full.jquery.js" type="text/javascript"></script>
 </head>
-
-<body class="results-page">
 
 
 <div id="topheader">
@@ -113,7 +67,7 @@
         <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
         <div id="projectname-banner" style="float:right">
             <span class="projectname">
-                <span class="projecttitle">Demo Project using Serenity and JUnit</span>
+                <span class="projecttitle"></span>
                 <span class="projectsubtitle"></span>
             </span>
         </div>
@@ -144,7 +98,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-04-2020 18:11</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 01-05-2020 19:34</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -161,6 +115,10 @@
                                         <i class="fa fa-2x fa-comments-o"></i>
                                         <span class="story-header-title">Google Tests</span>
                                     </h3>
+
+                                    <div class="discreet-requirement-narrative-title">
+                                        
+                                    </div>
                                 </div>
 
                         </td>
@@ -201,92 +159,83 @@
         <div>
             <table class="step-table">
                 <tr class="step-titles">
-                    <th width="65">
-                    </th>
-                    <th class="step-description-column greentext">
-                        Steps
+                    <th width="65">                        &nbsp;
                     </th>
 
+                        <th width="%" class="step-description-column greentext">
+                            Steps
+                        </th>
                         <th width="150" class="greentext">Screenshots</th>
                     <th width="130" class="greentext">Outcome</th>
-                    <th width="100" class="greentext"><i title="Duration" class="far fa-clock"></i></th>
+                    <th width="80" class="greentext"><i title="Duration" class="far fa-clock"></i></th>
                 </tr>
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
+                <tr class="test-SUCCESS">
+                    <td width="50" class="step-icon">
+                        <a name="0"/>
+                            <span style="margin-left: 20px; margin-right: 5px;"
+                                  class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="top-level-step">
+                                Navigate to page
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="SUCCESS-text">
+                                <a href="b3de88720c491ae38fe1762fce35b4e8a677c5cc0fdd276a31821b953dae84a2_screenshots.html#screenshots?screenshot=0">
+                                    <img src="9a56fb409f54e6c49157fbe36d6438958f6babf071188a9e071db9cd062ef456.png"
+                                         href="9a56fb409f54e6c49157fbe36d6438958f6babf071188a9e071db9cd062ef456.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                                <i class="fas fa-arrow-right"></i>
 
-                    <tr class="test-SUCCESS">
-
-                        <td width="50" class="step-icon">
-                            <a name="0"></a>
-                                <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                </span>
+                                <a href="b3de88720c491ae38fe1762fce35b4e8a677c5cc0fdd276a31821b953dae84a2_screenshots.html#screenshots?screenshot=1">
+                                    <img src="49ea9201727a087f33d9f07804e7130f9eaaaa386725d5c49fe9132aa80883a6.png"
+                                         href="49ea9201727a087f33d9f07804e7130f9eaaaa386725d5c49fe9132aa80883a6.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">4.01s</span></td>
+                </tr>
+                <tr class="test-FAILURE">
+                    <td width="50" class="step-icon">
+                        <a name="1"/>
+                            <span style="margin-left: 20px; margin-right: 5px;"
+                                  class="top-level-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                                <span class="top-level-step">
+                                Search on amazon: Samsung Note 10+
+                            </span>
+                            <span class="evidence">
+                            </span>
+                        </div>
+                    </td>
+                        <td width="160" class="FAILURE-text">
 
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="top-level-step">
-                                                Navigate to page
-                                        </span>
-                                <span class="evidence">
-                                </span>
-                            </div>
+                                <a href="b3de88720c491ae38fe1762fce35b4e8a677c5cc0fdd276a31821b953dae84a2_screenshots.html#screenshots?screenshot=2">
+                                    <img src="0ae64dd0b25faf67ff51bb67bcc1f661b6f8ca0deae8cdc6773b4485167f7706.png"
+                                         href="0ae64dd0b25faf67ff51bb67bcc1f661b6f8ca0deae8cdc6773b4485167f7706.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
                         </td>
-
-                            <td width="160" class="SUCCESS-text">
-                                    <a href="b3de88720c491ae38fe1762fce35b4e8a677c5cc0fdd276a31821b953dae84a2_screenshots.html#screenshots?screenshot=0">
-                                        <img src="9a56fb409f54e6c49157fbe36d6438958f6babf071188a9e071db9cd062ef456.png"
-                                             href="9a56fb409f54e6c49157fbe36d6438958f6babf071188a9e071db9cd062ef456.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                                    <i class="fas fa-arrow-right"></i>
-
-                                    <a href="b3de88720c491ae38fe1762fce35b4e8a677c5cc0fdd276a31821b953dae84a2_screenshots.html#screenshots?screenshot=1">
-                                        <img src="380d07c8d0eeaff21e8beaa99121afaefb1f925ef795040cfc055ef3858bf0a8.png"
-                                             href="380d07c8d0eeaff21e8beaa99121afaefb1f925ef795040cfc055ef3858bf0a8.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                            </td>
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">2.77s</span></td>
-                    </tr>
+                    <td width="100"><span class="top-level-step">FAILURE</span></td>
+                    <td width="100"><span class="top-level-step">22.56s</span></td>
+                </tr>
                     <tr class="test-FAILURE">
-
-                        <td width="50" class="step-icon">
-                            <a name="1"></a>
-                                <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
-                                </span>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="top-level-step">
-                                                Search on amazon: Samsung Note 10+
-                                        </span>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                            <td width="160" class="FAILURE-text">
-
-                                    <a href="b3de88720c491ae38fe1762fce35b4e8a677c5cc0fdd276a31821b953dae84a2_screenshots.html#screenshots?screenshot=2">
-                                        <img src="9b4dcd02636bf000b0552667e26be9be03b7c8eda3b535df14657abd215b0257.png"
-                                             href="9b4dcd02636bf000b0552667e26be9be03b7c8eda3b535df14657abd215b0257.png"
-                                             class="screenshot"
-                                             width="48" height="48"/>
-                                    </a>
-                            </td>
-                        <td width="130"><span class="top-level-step">FAILURE</span></td>
-                        <td width="100"><span class="top-level-step">24.82s</span></td>
-                    </tr>
-                        <tr class="test-FAILURE">
-                            <td width="40">&nbsp</td>
-                            <td width="%" colspan="4" class="error-message-cell">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
 
 
     <div style="display:block">
@@ -313,39 +262,38 @@
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>pages.GooglePage.clickOn128GbMemoryBox(GooglePage.java:96)<br />steps.GoogleSteps.searchOnAmazon(GoogleSteps.java:27)<br />tests.GoogleTests.searchForSomething(GoogleTests.java:38)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)<br /></pre>
+                        <pre>pages.GooglePage.clickInScreenSize(GooglePage.java:100)<br />steps.GoogleSteps.searchOnAmazon(GoogleSteps.java:22)<br />tests.GoogleTests.searchForSomething(GoogleTests.java:36)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)<br /></pre>
                     </div>
 
                     <h4>
                         Caused by: org.openqa.selenium.TimeoutException
                     </h4>
                     <div>
-                            <pre>Expected condition failed: waiting for GooglePage.gbMemoryThickBox to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
-                        <pre>pages.GooglePage.clickOn128GbMemoryBox(GooglePage.java :96)<br />steps.GoogleSteps.searchOnAmazon(GoogleSteps.java :27)<br />tests.GoogleTests.searchForSomething(GoogleTests.java :38)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java :89)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java :41)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :542)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :770)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java :464)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java :210)<br /></pre>
+                            <pre>Expected condition failed: waiting for GooglePage.screenSizeCheckBox to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
+                        <pre>pages.GooglePage.clickInScreenSize(GooglePage.java :100)<br />steps.GoogleSteps.searchOnAmazon(GoogleSteps.java :22)<br />tests.GoogleTests.searchForSomething(GoogleTests.java :36)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java :89)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java :41)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :542)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :770)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java :464)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java :210)<br /></pre>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-                            </td>
-                        </tr>
+                        </td>
+                    </tr>
                 <tr class="test-FAILURE">
                         <td colspan="3"></td>
-                    <td width="130"><span class="top-level-step"><em>FAILURE</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>30.48s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>FAILURE</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>30.54s</em></span></td>
                 </tr>
 
             </table>
         </div>
     </div>
-
     <div id="beforefooter"></div>
 
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-                <span class="version">Serenity BDD version 2.1.6</span>
+                <span class="version">Serenity BDD version 2.0.81</span>
             </div>
         </div>
     </div>
@@ -391,6 +339,5 @@
     <div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
     <div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
 
-</div>
-</body>
+    </body>
 </html>
